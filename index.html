@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afra Firdaus Momin | AI Data Quality Specialist</title>
+<meta name="description" content="Afra Firdaus Momin: AI data quality specialist with 10+ years in LLM evaluation, search and ads rating, data annotation and QA. Nine open-source, tested Python and SQL tools.">
+<meta name="theme-color" content="#f5f0e6">
+<meta property="og:title" content="Afra Firdaus Momin | AI Data Quality Specialist">
+<meta property="og:description" content="LLM evaluation · Search & ads rating · Data annotation · Quality assurance · Python & SQL tools">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5f0e6;--paper2:#fbf8f1;--ink:#101c2e;--muted:#566074;--line:#ddd5c4;
+  --pen:#c93c20;--hi:#ffe27a;--teal:#17606a;--chip:#ece5d4;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#0c1524;--paper2:#122035;--ink:#f1ecdf;--muted:#9fb0c6;--line:#22344d;
+  --pen:#ff7d5c;--hi:rgba(255,214,90,.24);--teal:#6fd6c9;--chip:#182a43;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans);
+  background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:26px 26px;background-attachment:fixed}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--pen);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.mono{font-family:var(--mono)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:20px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+nav .logo{font:700 15px var(--mono);margin-right:auto;text-decoration:none}
+nav .logo i{color:var(--pen);font-style:normal}
+nav a.l{font:500 13px var(--mono);color:var(--muted);text-decoration:none}
+nav a.l:hover{color:var(--pen)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:start;padding:72px 0 40px}
+.eyebrow{font:500 13px var(--mono);color:var(--pen);letter-spacing:.06em;text-transform:uppercase}
+h1{font:700 clamp(40px,7vw,72px)/1.02 var(--serif);letter-spacing:-.02em;margin:14px 0 22px}
+h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--hi) 62%,var(--hi) 92%,transparent 92%);padding:0 .06em}
+h1 .pen{position:relative;white-space:nowrap}
+h1 .pen svg{position:absolute;left:0;bottom:-.18em;width:100%;height:.28em;overflow:visible}
+.lede{font-size:18px;color:var(--muted);max-width:640px;margin:0}
+.ann{background:var(--hi);color:var(--ink);padding:0 .22em;border-radius:3px;white-space:nowrap}
+.ann::after{content:attr(data-l);font:700 .58em var(--mono);color:var(--pen);margin-left:.35em;vertical-align:super;letter-spacing:.04em}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{font:600 14px var(--mono);padding:12px 20px;border:2px solid var(--ink);border-radius:8px;text-decoration:none;display:inline-flex;gap:8px;align-items:center;transition:transform .12s,box-shadow .12s;cursor:pointer;background:transparent;color:var(--ink)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--pen)}
+.btn.p{background:var(--ink);color:var(--paper)}
+
+/* report card */
+.card-report{background:var(--paper2);border:2px solid var(--ink);border-radius:12px;padding:20px 22px;box-shadow:6px 6px 0 var(--ink);position:relative}
+.card-report h2{font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;display:flex;justify-content:space-between}
+.card-report .stamp{position:absolute;right:-10px;top:-16px;transform:rotate(6deg);font:700 12px var(--mono);color:var(--pen);border:2px solid var(--pen);border-radius:6px;padding:3px 9px;background:var(--paper)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px dashed var(--line);font-size:14px}
+.row:first-of-type{border-top:0}
+.row span:first-child{color:var(--muted)}
+.row b{font-family:var(--mono);font-size:14px}
+.row b.ok{color:var(--teal)}
+
+/* sections */
+section{padding:56px 0 8px;scroll-margin-top:56px}
+.sh{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.sh .n{font:700 13px var(--mono);color:var(--pen)}
+.sh h2{font:700 clamp(26px,4vw,36px)/1.1 var(--serif);margin:0;letter-spacing:-.01em}
+.sh p{flex-basis:100%;margin:0;color:var(--muted);max-width:680px}
+
+/* loop */
+.loop{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;counter-reset:s}
+.step{background:var(--paper2);border:1.5px solid var(--ink);border-radius:10px;padding:14px 12px;text-decoration:none;display:flex;flex-direction:column;gap:6px;position:relative;transition:transform .12s,box-shadow .12s}
+.step:hover{transform:translateY(-3px);box-shadow:0 4px 0 var(--pen)}
+.step:before{counter-increment:s;content:counter(s,decimal-leading-zero);font:700 11px var(--mono);color:var(--pen)}
+.step b{font:700 15px/1.2 var(--serif)}
+.step small{font:400 11px/1.4 var(--mono);color:var(--muted);overflow-wrap:anywhere}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr));gap:18px}
+.proj{background:var(--paper2);border:1.5px solid var(--ink);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px;transition:transform .12s,box-shadow .12s}
+.proj:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.proj h3{font:700 16px var(--mono);margin:0}
+.proj h3 a{text-decoration:none}
+.proj h3 a:hover{color:var(--pen)}
+.proj p{margin:0;color:var(--muted);font-size:14.5px;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font:500 11px var(--mono);background:var(--chip);padding:3px 8px;border-radius:5px}
+.run{display:flex;align-items:center;gap:8px;background:#0c1524;color:#e8f0ff;border-radius:8px;padding:8px 10px;font:400 12px var(--mono)}
+.run code{flex:1;white-space:normal;overflow-wrap:anywhere;line-height:1.5}
+.run code:before{content:"$ ";color:#ff7d5c}
+.run button{font:600 11px var(--mono);background:transparent;border:1px solid #4a5b78;color:#cbd7ee;border-radius:5px;padding:3px 8px;cursor:pointer}
+.run button:hover{border-color:#ff7d5c;color:#fff}
+.more{margin-top:18px;font:500 14px var(--mono)}
+.more a{color:var(--pen)}
+
+/* rubric demo */
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:var(--paper2);border:2px solid var(--ink);border-radius:12px;padding:22px}
+.bubble{border-left:4px solid var(--pen);padding:4px 0 4px 14px;margin:10px 0 0}
+.bubble small{font:700 11px var(--mono);color:var(--muted);letter-spacing:.08em;text-transform:uppercase;display:block}
+.crit{margin:14px 0}
+.crit label{display:flex;justify-content:space-between;font:600 13px var(--mono);margin-bottom:6px}
+.crit label span{color:var(--muted);font-weight:400}
+.seg{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{margin:0;display:block;text-align:center;border:1.5px solid var(--line);border-radius:6px;padding:6px 0;cursor:pointer;font:600 13px var(--mono);transition:background .1s}
+.seg label:hover{border-color:var(--ink)}
+.seg input:checked+label{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.seg input:focus-visible+label{outline:2px solid var(--pen);outline-offset:2px}
+.score{font:700 56px/1 var(--serif);margin:6px 0 2px}
+.score small{font:500 16px var(--mono);color:var(--muted)}
+.bar{height:12px;border-radius:99px;background:var(--chip);overflow:hidden;margin:12px 0}
+.bar i{display:block;height:100%;width:60%;background:var(--pen);border-radius:99px;transition:width .25s,background .25s}
+.verdict{font:600 14px var(--mono)}
+.note{color:var(--muted);font-size:14px;margin:12px 0 0}
+
+/* timeline */
+.log{border-left:2px solid var(--ink);margin-left:6px;padding-left:26px}
+.entry{position:relative;margin-bottom:28px}
+.entry:before{content:"";position:absolute;left:-34px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--pen)}
+.entry .when{font:500 12px var(--mono);color:var(--pen)}
+.entry h3{font:700 20px/1.25 var(--serif);margin:2px 0}
+.entry .org{font:500 13px var(--mono);color:var(--muted);margin-bottom:6px}
+.entry ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
+.entry li{margin:2px 0}
+
+/* skills + edu */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 13px var(--mono);border:1.5px solid var(--ink);border-radius:99px;padding:5px 12px;background:var(--paper2)}
+.chip.a{background:var(--ink);color:var(--paper)}
+h3.sub{font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.edu{display:grid;gap:14px}
+.edu div b{font:700 17px var(--serif);display:block}
+.edu div span{color:var(--muted);font-size:14px}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:16px;padding:40px 32px;margin:56px 0 0;display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center}
+.contact h2{font:700 clamp(28px,4vw,40px)/1.1 var(--serif);margin:0 0 10px}
+.contact p{margin:0;opacity:.85}
+.contact .btn{border-color:var(--paper);color:var(--paper)}
+.contact .btn.p{background:var(--paper);color:var(--ink)}
+.contact .btn:hover{box-shadow:3px 3px 0 var(--pen)}
+.contact .cta{margin:0;flex-direction:column;align-items:stretch}
+footer{padding:36px 0 48px;color:var(--muted);font:400 12px var(--mono);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .hero,.demo,.cols,.contact{grid-template-columns:1fr}
+  .loop{grid-template-columns:repeat(2,1fr)}
+  .hero{padding-top:44px}
+}
+@media (max-width:520px){nav a.l:nth-child(n+4){display:none}.card-report{box-shadow:4px 4px 0 var(--ink)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#top">afra<i>.</i>py</a>
+  <a class="l" href="#loop">loop</a><a class="l" href="#projects">projects</a><a class="l" href="#demo">demo</a><a class="l" href="#experience">experience</a><a class="l" href="#skills">skills</a><a class="l" href="#contact">contact</a>
+</div></nav>
+
+<main class="wrap" id="top">
+  <header class="hero">
+    <div>
+      <div class="eyebrow">AI data quality specialist · Python · SQL</div>
+      <h1>Better data for <span class="pen"><em>better AI</em><svg viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 40 1, 70 12, 110 6 S 190 2, 230 7 S 280 10, 298 4" fill="none" stroke="var(--pen)" stroke-width="3" stroke-linecap="round"/></svg></span>.</h1>
+      <p class="lede">I'm Afra Firdaus Momin. I have <span class="ann" data-l="TASK">evaluated LLM responses</span>, <span class="ann" data-l="TASK">rated search and ads quality</span> and <span class="ann" data-l="TASK">annotated training data</span> for AI models, backed by <span class="ann" data-l="EXP">10+ years</span> of research, validation and QA, and I write the small, tested tools that make that work measurable.</p>
+      <div class="cta">
+        <a class="btn p" href="mailto:afraomairgamer@gmail.com">Hire me →</a>
+        <a class="btn" href="#projects">See the code</a>
+        <a class="btn" href="https://www.linkedin.com/in/afra-firdaus-46a99b286">LinkedIn</a>
+      </div>
+    </div>
+    <aside class="card-report" aria-label="Profile summary">
+      <div class="stamp">OPEN TO WORK</div>
+      <h2><span>Quality report</span><span>afra-ozi</span></h2>
+      <div class="row"><span>Experience</span><b class="ok">10+ years ✓</b></div>
+      <div class="row"><span>Education</span><b>MCA · 2020</b></div>
+      <div class="row"><span>Open-source tools</span><b>9</b></div>
+      <div class="row"><span>Unit tests</span><b class="ok">36 passing ✓</b></div>
+      <div class="row"><span>Dependencies</span><b>0</b></div>
+      <div class="row"><span>Certified</span><b>GenAI prompting</b></div>
+      <div class="row"><span>Working mode</span><b>Remote</b></div>
+    </aside>
+  </header>
+
+  <section id="loop">
+    <div class="sh"><span class="n">01</span><h2>My quality loop</h2><p>Good labels are a process, not a one-off. Each step below has a tool I built and tested.</p></div>
+    <div class="loop">
+      <a class="step" href="https://github.com/afra-ozi/prompt-engineering-playbook"><b>Guidelines</b><small>prompt-engineering-playbook</small></a>
+      <a class="step" href="https://github.com/afra-ozi/llm-eval-scorer"><b>Annotate &amp; rate</b><small>llm-eval-scorer</small></a>
+      <a class="step" href="https://github.com/afra-ozi/qa-audit-sampler"><b>Audit a sample</b><small>qa-audit-sampler</small></a>
+      <a class="step" href="https://github.com/afra-ozi/annotation-agreement"><b>Check agreement</b><small>annotation-agreement</small></a>
+      <a class="step" href="https://github.com/afra-ozi/search-relevance-metrics"><b>Measure quality</b><small>search-relevance-metrics<br>data-quality-checker<br>sql-data-validation</small></a>
+      <a class="step" href="https://github.com/afra-ozi/guideline-quiz"><b>Train &amp; feed back</b><small>guideline-quiz<br>annotator-productivity-report</small></a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="sh"><span class="n">02</span><h2>Projects</h2><p>Standard-library Python 3.9+ with unit tests, sample data and a README. Clone, copy the command, run.</p></div>
+    <div class="projects">
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/llm-eval-scorer">llm-eval-scorer</a></h3><p>Weighted rubric scoring for chatbot responses (accuracy, helpfulness, safety, instruction following), rater-disagreement flags and side-by-side win rates.</p><div class="tags"><span class="tag">Python</span><span class="tag">LLM eval</span><span class="tag">5 tests</span></div><div class="run"><code>python llm_eval.py sample_ratings.csv sample_preferences.csv</code><button type="button">copy</button></div></article>
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/annotation-agreement">annotation-agreement</a></h3><p>Cohen's and Fleiss' kappa, percent agreement and a list of items to adjudicate, from any label export.</p><div class="tags"><span class="tag">Python</span><span class="tag">Inter-annotator</span><span class="tag">5 tests</span></div><div class="run"><code>python iaa.py sample_annotations.csv</code><button type="button">copy</button></div></article>
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/search-relevance-metrics">search-relevance-metrics</a></h3><p>NDCG@k, Precision@k and MRR from human relevance ratings, plus the results raters disagree on.</p><div class="tags"><span class="tag">Python</span><span class="tag">Search quality</span><span class="tag">5 tests</span></div><div class="run"><code>python relevance.py sample_ratings.csv 5</code><button type="button">copy</button></div></article>
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/qa-audit-sampler">qa-audit-sampler</a></h3><p>A fair, reproducible QA audit sample, stratified by annotator and label so nobody and no label is skipped.</p><div class="tags"><span class="tag">Python CLI</span><span class="tag">QA</span><span class="tag">5 tests</span></div><div class="run"><code>python audit_sampler.py sample_tasks.csv --rate 0.1 --min-per-group 2</code><button type="button">copy</button></div></article>
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/data-quality-checker">data-quality-checker</a></h3><p>Rule-based CSV validation configured in JSON: required fields, duplicates, regex formats, allowed values and ranges.</p><div class="tags"><span class="tag">Python</span><span class="tag">JSON rules</span><span class="tag">4 tests</span></div><div class="run"><code>python dq_check.py sample_records.csv rules.json</code><button type="button">copy</button></div></article>
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/sql-data-validation">sql-data-validation</a></h3><p>SQL checks for missing labels, orphan rows, impossible timestamps and speed outliers, with a PASS/FAIL runner on SQLite.</p><div class="tags"><span class="tag">SQL</span><span class="tag">SQLite</span><span class="tag">2 tests</span></div><div class="run"><code>python run_checks.py</code><button type="button">copy</button></div></article>
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/annotator-productivity-report">annotator-productivity-report</a></h3><p>Tasks per hour, handling time and QA pass rate side by side, with flags for who needs a check-in.</p><div class="tags"><span class="tag">Python CLI</span><span class="tag">Reporting</span><span class="tag">4 tests</span></div><div class="run"><code>python productivity.py sample_task_log.csv</code><button type="button">copy</button></div></article>
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/guideline-quiz">guideline-quiz</a></h3><p>A terminal quiz that trains raters on guideline edge cases, with a score per topic and an explanation for every wrong answer.</p><div class="tags"><span class="tag">Python CLI</span><span class="tag">Training</span><span class="tag">6 tests</span></div><div class="run"><code>python quiz.py questions.json --answers sample_answers.txt</code><button type="button">copy</button></div></article>
+      <article class="proj"><h3><a href="https://github.com/afra-ozi/prompt-engineering-playbook">prompt-engineering-playbook</a></h3><p>Eight prompt patterns, before/after rewrites and a checklist for evaluating LLM responses.</p><div class="tags"><span class="tag">Markdown</span><span class="tag">Prompting</span><span class="tag">Guide</span></div><div class="run"><code>git clone https://github.com/afra-ozi/prompt-engineering-playbook</code><button type="button">copy</button></div></article>
+    </div>
+    <p class="more">All repos → <a href="https://github.com/afra-ozi?tab=repositories">github.com/afra-ozi</a></p>
+  </section>
+
+  <section id="demo">
+    <div class="sh"><span class="n">03</span><h2>Try the rubric</h2><p>This is the same weighted rubric my <span class="mono">llm-eval-scorer</span> uses. Rate the answer below and watch how the weights decide the score.</p></div>
+    <div class="demo">
+      <div class="panel">
+        <div class="bubble"><small>Prompt</small>What is the capital of Australia?</div>
+        <div class="bubble" style="margin-top:16px"><small>Model response</small>The capital of Australia is Sydney, the country's largest and best-known city. It is home to the Opera House and a major harbour.</div>
+        <p class="note">Read it as a rater: it is well written and on-topic, but is it right?</p>
+      </div>
+      <form class="panel" id="rubric" aria-label="Rubric">
+        <div class="crit"><label>Accuracy <span>weight 35%</span></label><div class="seg" data-w="0.35" data-k="accuracy"></div></div>
+        <div class="crit"><label>Helpfulness <span>weight 25%</span></label><div class="seg" data-w="0.25" data-k="helpfulness"></div></div>
+        <div class="crit"><label>Safety <span>weight 25%</span></label><div class="seg" data-w="0.25" data-k="safety"></div></div>
+        <div class="crit"><label>Instruction following <span>weight 15%</span></label><div class="seg" data-w="0.15" data-k="instruction"></div></div>
+        <div class="score" aria-live="polite"><span id="sc">3.00</span> <small>/ 5</small></div>
+        <div class="bar"><i id="bar"></i></div>
+        <div class="verdict" id="verdict"></div>
+        <p class="note">Accuracy carries the most weight, so a fluent but wrong answer can't score well. That's the point of a rubric.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="sh"><span class="n">04</span><h2>Experience</h2></div>
+    <div class="log">
+      <div class="entry"><div class="when">2024 – 2026</div><h3>Search Engine Evaluator &amp; AI Data Specialist</h3><div class="org">Appen · Remote</div>
+        <ul><li>Rated the relevance and quality of search results against detailed rater guidelines.</li><li>Evaluated and compared LLM chatbot responses for accuracy, helpfulness and safety; wrote prompts and feedback for model training.</li><li>Assessed ads relevance, maps/local listings and social media content for quality and policy compliance.</li><li>Annotated text, image and audio data for machine-learning training sets.</li></ul></div>
+      <div class="entry"><div class="when">Jul 2019 – 2024</div><h3>Quality Analyst</h3><div class="org">Datamatics Business Solutions Ltd</div>
+        <ul><li>Performed data annotation and labeling with a consistent focus on accuracy and consistency.</li><li>Interpreted and applied complex client guidelines for categorization, labeling and quality review.</li></ul></div>
+      <div class="entry"><div class="when">Apr 2015 – Jun 2017</div><h3>Senior Research Associate</h3><div class="org">Datamatics Business Solutions Ltd</div>
+        <ul><li>Analyzed incoming projects against client requirements to estimate effort and turnaround time.</li><li>Maintained project tracking and resource utilization reports for management.</li></ul></div>
+      <div class="entry"><div class="when">Apr 2012 – Apr 2015</div><h3>Research Associate</h3><div class="org">Datamatics Business Solutions Ltd</div>
+        <ul><li>Researched and validated entity data from search engines and secondary sources.</li><li>Ran quality checks on other researchers' work, allocated work across the team and trained new researchers.</li><li>Formatted and cleaned data in MS Excel; managed backups, updates and data retrieval.</li></ul></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="sh"><span class="n">05</span><h2>Skills &amp; education</h2></div>
+    <div class="cols">
+      <div>
+        <h3 class="sub">AI data &amp; quality</h3>
+        <div class="chips" style="margin-bottom:22px"><span class="chip a">LLM evaluation</span><span class="chip a">Prompt engineering</span><span class="chip a">Data annotation</span><span class="chip a">Search quality rating</span><span class="chip a">Ads &amp; maps rating</span><span class="chip a">QA audits</span><span class="chip a">Guideline interpretation</span><span class="chip a">Data validation</span><span class="chip a">Secondary research</span></div>
+        <h3 class="sub">Code &amp; tools</h3>
+        <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Oracle PL/SQL</span><span class="chip">SQLite</span><span class="chip">Git / GitHub</span><span class="chip">MS Excel</span><span class="chip">Google Workspace</span><span class="chip">Java (basics)</span><span class="chip">C# (basics)</span></div>
+      </div>
+      <div class="edu">
+        <h3 class="sub">Education &amp; certifications</h3>
+        <div><b>Master of Computer Applications (MCA)</b><span>Dr. B.V. Hiray College of Management &amp; Research Center, Savitribai Phule Pune University · 2020 · Higher Second Class</span></div>
+        <div><b>B.Sc. Information Technology</b><span>Akbar Peerbhoy College · 70%</span></div>
+        <div><b>Generative AI: Prompt Engineering Basics</b><span>IBM via Coursera · Feb 2023</span></div>
+        <div><b>Oracle DBA &amp; PL/SQL</b><span>Karrox Technology · 2016</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div><h2>Let's work together.</h2><p>I'm open to remote roles in AI training data, LLM evaluation, search and ads quality rating, and data QA.</p></div>
+    <div class="cta">
+      <a class="btn p" href="mailto:afraomairgamer@gmail.com">afraomairgamer@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/afra-firdaus-46a99b286">LinkedIn</a>
+      <a class="btn" href="https://github.com/afra-ozi">GitHub · afra-ozi</a>
+    </div>
+  </section>
+
+  <footer><span>© Afra Firdaus Momin</span><span>Hand-written HTML &amp; CSS · no framework · source on GitHub</span></footer>
+</main>
+
+<script>
+(function(){
+  // copy buttons
+  document.querySelectorAll('.run button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.parentNode.querySelector('code').textContent;
+      var done=function(){b.textContent='copied';setTimeout(function(){b.textContent='copy'},1400)};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,done)}else{done()}
+    });
+  });
+  // rubric demo: same weights as llm-eval-scorer
+  var segs=document.querySelectorAll('.seg');
+  segs.forEach(function(s,i){
+    var k=s.getAttribute('data-k'),html='';
+    for(var v=1;v<=5;v++){html+='<input type="radio" name="'+k+'" id="'+k+v+'" value="'+v+'"'+(v===3?' checked':'')+'><label for="'+k+v+'">'+v+'</label>'}
+    s.innerHTML=html;
+  });
+  function update(){
+    var total=0;
+    segs.forEach(function(s){
+      var c=s.querySelector('input:checked');
+      total+=parseFloat(s.getAttribute('data-w'))*parseInt(c.value,10);
+    });
+    document.getElementById('sc').textContent=total.toFixed(2);
+    var bar=document.getElementById('bar');
+    bar.style.width=(total/5*100)+'%';
+    var v=document.getElementById('verdict');
+    var label,color;
+    if(total>=4){label='Strong response';color='var(--teal)'}
+    else if(total>=3){label='Acceptable, needs review';color='#c98a00'}
+    else{label='Weak response, do not use';color='var(--pen)'}
+    bar.style.background=color;v.textContent=label;v.style.color=color;
+  }
+  document.getElementById('rubric').addEventListener('change',update);
+  update();
+})();
+</script>
+</body>
+</html>
