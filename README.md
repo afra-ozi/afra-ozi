@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://afra-ozi.github.io"><img src="https://img.shields.io/badge/Portfolio-afra--ozi.github.io-1F4E79?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/afra-momin-685aa5328"><img src="https://img.shields.io/badge/LinkedIn-Afra%20Momin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/afra-firdaus-46a99b286"><img src="https://img.shields.io/badge/LinkedIn-Afra%20Momin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:afraomairgamer@gmail.com"><img src="https://img.shields.io/badge/Email-Hire%20me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/Open%20to-Remote%20roles-2ea44f?style=for-the-badge" alt="Open to remote roles"/>
 </p>
@@ -192,7 +192,7 @@ By topic:
 Open to **remote roles in AI training data, LLM evaluation, search/ads quality rating and data QA**.
 
 - 📧 [afraomairgamer@gmail.com](mailto:afraomairgamer@gmail.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/afra-momin-685aa5328)
+- 💼 [LinkedIn](https://www.linkedin.com/in/afra-firdaus-46a99b286)
 - 🌐 [afra-ozi.github.io](https://afra-ozi.github.io)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E7DBF,100:1F4E79&height=110&section=footer" width="100%" alt=""/>
