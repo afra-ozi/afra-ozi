@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://afra-ozi.github.io/afra-ozi/"><img src="https://img.shields.io/badge/Portfolio-View%20my%20site-1F4E79?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/afra-firdaus-46a99b286"><img src="https://img.shields.io/badge/LinkedIn-Afra%20Momin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/afra-firdaus-46a99b286"><img src="https://img.shields.io/badge/LinkedIn-Afra%20Firdaus-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:afraomairgamer@gmail.com"><img src="https://img.shields.io/badge/Email-Hire%20me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/Open%20to-Remote%20roles-2ea44f?style=for-the-badge" alt="Open to remote roles"/>
 </p>
